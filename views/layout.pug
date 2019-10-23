@@ -1,0 +1,26 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE-edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title= title
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/style.css')
+    body
+        nav.navbar.navbar-inverse.navbar-fixed-top
+            .container
+                #navbar.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active   
+                            a(href='/') Главная
+                        li
+                            a(href='/about') О нас
+                        li
+                            a(href='/contact') Контакты
+        .container
+            .main-content
+                block content
+
+                    block content
+                        
