@@ -1,1 +1,24 @@
 extends layout
+
+block content
+            .contacts
+                .row
+                .col-md-4  
+                .col-md-4
+                h4 Напишите нам
+                form(action='./mail.php' method='post')
+                    .form-group
+                    label(for='name') &Vcy;&acy;&shcy;&iecy; &icy;&mcy;&yacy;:
+                    input#name.form-control(type='name' name='name' placeholder='Name')
+                    .form-group
+                    label(for='email1') E-mail:
+                    input#email1.form-control(type='email' name='email' placeholder='Email')
+                    .form-group
+                    label(for='phone') &Ncy;&ocy;&mcy;&iecy;&rcy; &tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;&acy;:
+                    input#phone.form-control(type='phone' name='phone' placeholder='Phone')
+                    .form-group
+                    label(for='message') &Scy;&ocy;&ocy;&bcy;&shchcy;&iecy;&ncy;&icy;&iecy;:
+                    textarea.form-control(name='message' rows='3')
+                    button.btn.btn-info(type='submit') &Ocy;&tcy;&pcy;&rcy;&acy;&vcy;&icy;&tcy;&softcy; &scy;&ocy;&ocy;&bcy;&shchcy;&iecy;&ncy;&icy;&iecy;
+                .col-md-4  
+            .contacts
