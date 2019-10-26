@@ -1,4 +1,146 @@
-extends layout
-
-block content
-    h1 И здесь тоже :))
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Company-HTML Bootstrap theme
+  // Bootstrap
+  link(href='css/bootstrap.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='css/font-awesome.min.css')
+  link(rel='stylesheet' href='css/animate.css')
+  link(href='css/prettyPhoto.css' rel='stylesheet')
+  link(href='css/style.css' rel='stylesheet')
+  //
+    =======================================================
+    Theme Name: Company
+    Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+    =======================================================
+header
+  nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+    .navigation
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='.navbar-collapse.collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .navbar-brand
+            a(href='index.html')
+              h1
+                span Com
+                | pany
+        .navbar-collapse.collapse
+          .menu
+            ul.nav.nav-tabs(role='tablist')
+              li(role='presentation')
+                a(href='/') Home
+              li(role='presentation')
+                a.active(href='about') About Us
+              li(role='presentation')
+                a(href='contact') Contact
+#breadcrumb
+  .container
+    .breadcrumb
+      li
+        a(href='index.html') Home
+      li About Us
+.aboutus
+  .container
+    h3 Our company information
+    hr
+    .col-md-7.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='300ms')
+      img.img-responsive(src='images/7.jpg')
+      h4 We Create, Design and Make it Real
+      p
+        | Nam tempor velit sed turpis imperdiet vestibulum. In mattis leo ut sapien euismod id feugiat mauris euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id nulla risus, vel tincidunt
+        | turpis. Aliquam a nulla mi, placerat blandit eros.
+      p
+        | In neque lectus, lobortis a varius a, hendrerit eget dolor. Fusce scelerisque, sem ut viverra sollicitudin, est turpis blandit lacus, in pretium lectus sapien at est. Integer pretium ipsum sit amet dui feugiat vitae dapibus odio eleifend.
+    .col-md-5.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='600ms')
+      .skill
+        h2 Our Skills
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .progress-wrap
+          h3 Graphic Design
+          .progress
+            .progress-bar.color1(role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width: 85%')
+              span.bar-width 85%
+        .progress-wrap
+          h4 HTML
+          .progress
+            .progress-bar.color2(role='progressbar' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100' style='width: 95%')
+              span.bar-width 95%
+        .progress-wrap
+          h4 CSS
+          .progress
+            .progress-bar.color3(role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: 80%')
+              span.bar-width 80%
+        .progress-wrap
+          h4 Wordpress
+          .progress
+            .progress-bar.color4(role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 90%')
+              span.bar-width 90%
+.our-team
+  .container
+    h3 Our Team
+    .text-center
+      .col-md-4.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='300ms')
+        img(src='images/services/1.jpg' alt='')
+        h4 John Doe
+        p Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor
+      .col-md-4.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='600ms')
+        img(src='images/services/2.jpg' alt='')
+        h4 John Doe
+        p Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor
+      .col-md-4.wow.fadeInDown(data-wow-duration='1000ms' data-wow-delay='900ms')
+        img(src='images/services/3.jpg' alt='')
+        h4 John Doe
+        p Lorem ipsum dolor sit amet consectetur adipisicing eil sed deiusmod tempor
+footer
+  .footer
+    .container
+      .social-icon
+        .col-md-4
+          ul.social-network
+            li
+              a.fb.tool-tip(href='#' title='Facebook')
+                i.fa.fa-facebook
+            li
+              a.twitter.tool-tip(href='#' title='Twitter')
+                i.fa.fa-twitter
+            li
+              a.gplus.tool-tip(href='#' title='Google Plus')
+                i.fa.fa-google-plus
+            li
+              a.linkedin.tool-tip(href='#' title='Linkedin')
+                i.fa.fa-linkedin
+            li
+              a.ytube.tool-tip(href='#' title='You Tube')
+                i.fa.fa-youtube-play
+      .col-md-4.col-md-offset-4
+        .copyright
+          | &copy; Company Theme. All Rights Reserved.
+          .credits
+            //
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Company
+            | Designed by 
+            a(href='https://bootstrapmade.com/') BootstrapMade
+    .pull-right
+      a.scrollup(href='#home')
+        i.fa.fa-angle-up.fa-3x
+// jQuery (necessary for Bootstrap's JavaScript plugins)
+script(src='js/jquery.min.js')
+script(src='js/jquery-migrate.min.js')
+// Include all compiled plugins (below), or include individual files as needed
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.prettyPhoto.js')
+script(src='js/jquery.isotope.min.js')
+script(src='js/wow.min.js')
+script(src='js/functions.js')
